@@ -30,4 +30,32 @@
 //   }
 
 //   return result;
-// };
+
+// Compress String
+const compress = (s) => {
+  let result = "";
+  //   for O(n) result = []
+  let j = 0;
+  let i = 0;
+
+  while (j <= s.length) {
+    if (s[i] === s[j]) {
+      j += 1;
+    } else {
+      let count = j - i;
+      if (count === 1) {
+        result += s[i];
+        // for O(n) result.push(s[i])
+      } else {
+        result += count + s[i];
+        // for O(n) result.push(count, s[i])
+      }
+      i = j;
+    }
+  }
+
+  return result;
+  // for O(n*n) result.join("")
+};
+
+console.log(compress("aafsssttt"));
