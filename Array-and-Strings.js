@@ -107,3 +107,33 @@
 //   }
 //   return true;
 // };
+
+// most frequent char
+// Write a function, mostFrequentChar, that takes in a
+//  string as an argument. The function should return
+//  the most frequent character of the string. If there
+//   are ties, return the character that appears earlier
+//    in the string.
+
+// You can assume that the input string is non-empty.
+// #Solution
+
+// const mostFrequentChar = (s) => {
+//   let count = {};
+
+//   for (let char of s) {
+//     if (!(char in count)) {
+//       count[char] = 0;
+//     }
+//     count[char]++;
+//   }
+//   let best = null;
+//   for (char in count) {
+//     if (best === null || count[char] > count[best]) {
+//       best = char;
+//     }
+//   }
+//   return best;
+// };
+
+// console.log(mostFrequentChar("bookeeper"));
