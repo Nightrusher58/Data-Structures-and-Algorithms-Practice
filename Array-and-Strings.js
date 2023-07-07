@@ -137,3 +137,42 @@
 // };
 
 // console.log(mostFrequentChar("bookeeper"));
+
+// Pair Sum
+// Brute Force approach O(n^2)
+// const pairSum = (numbers, targetSum) => {
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = i + 1; j < numbers.length; j++) {
+//       if (numbers[i] + numbers[j] === targetSum) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// };
+
+// console.log(pairSum([9, 5, 6, 9], 18));
+
+// Question
+// Write a function, intersection, that takes in two arrays, a,b, as arguments. The function should return a new array containing elements that are in both of the two arrays.
+
+// You may assume that each input array does not contain duplicate elements.
+
+// intersection([4,2,1,6], [3,6,9,2,10]) // -> [2,6]
+// intersection([2,4,6], [4,2]) // -> [2,4]
+
+// solution
+// const intersection = (a, b) => {
+//   let c = [];
+//   const items = new Set();
+
+//   for (let num of a) {
+//     items.add(num);
+//   }  adding to a new set is o(1)
+
+//   for (let ele of b) {
+//     if (items.has(ele)) {
+//       c.push(ele);
+//     }
+//   }
+//   return c;
+// }; o(n+m)
