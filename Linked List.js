@@ -74,3 +74,37 @@
 //   }
 //   return result;
 // };
+
+// Write a function, getNodeValue, that takes in the head of a linked list and an index. The function should
+// return the value of the linked list at the specified index.
+
+// const getNodeValue = (head, index) => {
+//   let count = 0;
+//   let result = null;
+//   let current = head;
+//   while (current !== null) {
+//     if (index === count) {
+//       result = current.val;
+//     }
+//     count++;
+//     current = current.next;
+//   }
+//   return result;
+// };
+
+// Write a function, reverseList, that takes in the head of a linked list as an argument.
+// The function should reverse the order of the nodes in
+// the linked list in-place and return the new head of the
+// reversed linked list.
+
+// const reverseList = (head) => {
+//   let current = head;
+//   let prev = null;
+//   while (current !== null) {
+//     const next = current.next; //stores initial next arrow so its not lost
+//     current.next = prev;
+//     prev = current;
+//     current = next;
+//   }
+//   return prev;
+// };
