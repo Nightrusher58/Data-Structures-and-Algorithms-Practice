@@ -184,3 +184,26 @@
 //     return true;
 //   }
 // };
+
+// Write a function, longestStreak, that takes in the head of a linked list as an argument.
+// The function should return the length of the longest consecutive streak of the same value within the list.
+// const longestStreak = (head) => {
+//   let maxStreak = 0;
+//   let currentStreak = 0;
+//   let prevValue = null;
+//   let current = head;
+//   while (current !== null) {
+//     if (current.val === prevValue) {
+//       currentStreak++;
+//     } else {
+//       currentStreak = 1;
+//     }
+//     if (currentStreak > maxStreak) {
+//       maxStreak = currentStreak;
+//     }
+//     prevValue = current.val;
+//     current = current.next;
+//   }
+
+//   return maxStreak;
+// };
